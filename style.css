@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #3e4452; /* Cor de fundo escura */
+    color: white;
+}
+
+#game-container {
+    background-color: #2c313a;
+    border: 5px solid #1c1f24;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+h1 {
+    color: #ff9933; /* Laranja para destaque */
+    margin-bottom: 10px;
+}
+
+#status-text {
+    font-size: 1.2em;
+    min-height: 20px; /* Garante espaço para a mensagem */
+}
+
+#button-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.game-button {
+    width: 60px;
+    height: 60px;
+    background-color: #5d677d; /* Cor padrão do botão */
+    border: 3px solid #3e4452;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Estado do botão quando está ativo na demonstração */
+.game-button.active {
+    background-color: #00ff00; /* Verde brilhante */
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Efeito de clique do usuário */
+.game-button:active {
+    transform: scale(0.95);
+}
+
+#start-button {
+    padding: 10px 20px;
+    background-color: #008cba; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#start-button:hover {
+    background-color: #00a4d8;
+}
+
+#start-button:disabled {
+    background-color: #5d677d;
+    cursor: not-allowed;
+}
